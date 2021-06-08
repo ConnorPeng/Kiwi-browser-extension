@@ -1,0 +1,70 @@
+@import url('http://fonts.cdnfonts.com/css/yinmar');
+
+.main-itembox-leo {
+    display: flex;
+    height: 90px;
+    border-bottom: 1px solid black;
+    margin-bottom: 5px;
+}
+
+.main-itembox-imgbtn {
+    display: block;
+}
+
+.main-itembox-image-leo {
+    height: 56px;
+    max-width: 97px;
+    margin-left: 20px;
+}
+
+.main-itembox-info-leo {
+    flex-direction: row;
+    width: 205px;
+    height: 75px;
+    margin-left: 16px;
+
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.main-itembox-website {
+    font-family: Yinmar;
+    font-style: normal;
+    font-weight: normal;
+    color: #2FB31A;
+    text-align: center;
+    font-size: 20px;
+    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.main-itembox-price {
+    font-family: Yinmar;
+    font-style: normal;
+    font-weight: normal;
+    color: #000000;
+    text-align: center;
+    margin: 0px;
+
+}
+
+.main-item-buy-it-button {
+    background-color: inherit;
+    text-align: center;
+    width: 57px;
+    display: block;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+.main-item-buy-it-button:hover {
+    color: #2FB31A;
+    box-shadow: 3px 1px 1px #2FB21A;
+}
+
+.main-item-buy-it-button:focus {
+    background-color: lightgray;
+    color: #2FB31A;
+}

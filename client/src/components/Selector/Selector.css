@@ -1,0 +1,47 @@
+@import url('http://fonts.cdnfonts.com/css/yinmar');
+
+.selector-text {
+    font-family: Yinmar;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    color: #000000;
+    text-align: center;
+    width: 200px;
+    margin: 0px;
+}
+
+.selector-checkbox {
+    border: 5px solid black;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+.selector-item {
+    height: 30px;
+    margin-bottom: 5px;
+    padding-left: 50px;
+
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.selector-square {
+    position: relative;
+    left: -230px;
+    width: 20px;
+    height: 20px;
+    background-color: inherit;
+    border: 2px solid #2FB21A;
+    border-radius: 2px;
+}
+
+.selector-item:hover .selector-checkbox ~ .selector-square {
+    background-color: #cccccc;
+}
+
+.selector-item .selector-checkbox:checked ~ .selector-square {
+    background-color: #2FB21A;
+}

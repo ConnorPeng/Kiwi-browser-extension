@@ -1,0 +1,37 @@
+@import url('http://fonts.cdnfonts.com/css/yinmar');
+
+.nav-bar {
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.first{
+    padding-left: 40px;
+}
+
+.second{
+    margin-left: 90px;
+}
+
+.third{
+    margin-left: 90px;
+}
+
+.grey {
+    color: darkgrey;
+    fill: darkgray;
+    cursor: not-allowed;
+    width: 25px;
+    height: 25px;
+}
+
+.green {
+    color: #2FB31A;
+    cursor: pointer;
+    fill: #2FB21A;
+    width: 25px;
+    height: 25px;
+}

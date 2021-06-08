@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Atma');
+
+.first_row {
+    height: 75px;
+    padding-top: 15px;
+    padding-right: 60px;
+    padding-left: 40px;
+    padding-bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gallery {
+    padding-top: 10px;
+    width: 340;
+    height: 340;
+    display: grid;
+    grid-template-columns: 170px 170px;
+    grid-template-rows: 170px;
+  }
+
+.gallery img {
+    width: 170px;
+    height: 170px;
+  }
+
+.Username {
+    font-family: 'Atma';
+    font-size: 30px;
+}
+
+
+.menu {
+    height: 65px;
+    padding-top: 0px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 0px;
+    font-family: 'Atma';
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    border-bottom: 1px solid grey;
+}

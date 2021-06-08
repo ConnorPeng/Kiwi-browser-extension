@@ -1,0 +1,64 @@
+@import url('http://fonts.cdnfonts.com/css/yinmar');
+
+
+.selection-page-body-leo {
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    border: 1px solid #FFFFFF;
+}
+
+.selection-header-part {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 58px;
+}
+
+.selection-page-account {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 33px;
+    height: 33px;
+}
+
+.selection-instruction {
+    font-size: 25px;
+    height: 39px;
+    text-align: center;
+    width: 100%;
+    margin: 0px;
+    display: block;
+    font-weight: normal;
+    color: black;
+}
+
+.selection-selector-list {
+    height: 280px;
+    width: 96%;
+    padding: 2%;
+    overflow: auto;
+}
+
+.selection-footer {
+    height: 89px;
+}
+
+.selection-finish-button {
+    width: 235px;
+    height: 50px;
+
+    background: #2FB21A;
+    border-radius: 15px;
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 44px;
+
+    color: #FFFFFF;
+    align-items: center;
+    margin-left: 59px;
+
+    cursor: pointer;
+}

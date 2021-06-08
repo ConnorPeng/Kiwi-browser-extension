@@ -1,0 +1,21 @@
+@import url('http://fonts.cdnfonts.com/css/yinmar');
+
+.sort-button {
+    text-transform: none;
+    width: 130px;
+
+    background: white;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    margin-left: 22px;
+
+    border-radius: 15px;
+    font-size: 14px;
+    padding: 3px;
+
+    cursor: pointer;
+}
+
+.sort-button:hover {
+    background-color: #dddddd;
+}

@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alice&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Atma&display=swap");
+
+.in-line {
+  display: flex;
+}
+
+.username-position {
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+  display: flex;
+  font-family: "Atma";
+  font-size: 15px;
+}
+
+.button-position {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: 30px;
+}
+
+.button-size {
+  width: 90px;
+  height: 24px;
+  text-transform: none;
+  border-radius: 20px;
+  color: #2fb31a;
+  border-color: #2fb31a;
+  background-color: white;
+  font-family: "Atma";
+  font-size: 15px;
+  border: 1px solid;
+}
+
+.image-position {
+  padding-top: 8px;
+}
+
+.tag-position {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 15px;
+}
+
+.tag-size {
+  width: 97px;
+  height: 13px;
+  text-transform: none;
+  border-radius: 10px;
+  background-color: white;
+  font-family: "Alice";
+  font-size: 10px;
+  border: 1px solid;
+}
+
+.icon-size {
+  width: 20px;
+  height: 17.83px;
+  fill: #2fb31a;
+}
+
+.text-position {
+  width: 313px;
+  margin-top: 6px;
+  font-family: "Acme";
+}
+
+.green-color {
+  color: #2fb31a;
+}

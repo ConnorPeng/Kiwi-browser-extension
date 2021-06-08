@@ -1,0 +1,33 @@
+@import url('http://fonts.cdnfonts.com/css/yinmar');
+
+.main-page-body-leo {
+    background: white;
+}
+
+.filter-and-sorter {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    height: auto;
+}
+
+.main-items-list {
+    width: 96%;
+    padding: 2%;
+    overflow: auto;
+    height: 350px;
+
+}
+
+.main-upper-part {
+    height: 80px;
+}
+
+.main-lower-part {
+    height: 40px;
+}
+
+.main-around-header {
+    height: 54px;
+}
+

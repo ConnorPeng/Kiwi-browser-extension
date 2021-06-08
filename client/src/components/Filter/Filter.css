@@ -1,0 +1,21 @@
+@import url('http://fonts.cdnfonts.com/css/yinmar');
+
+.main-filter-leo {
+    display: flex;
+    align-items: center;
+    width: 130px;
+    margin-left: 16px;
+    border: 1px solid black;
+    border-radius: 15px;
+    height: 18px;
+    padding: 2px;
+}
+
+.filter-header {
+    width: 28%;
+}
+
+.filter-input {
+    width: 65%;
+    border: none;
+}
