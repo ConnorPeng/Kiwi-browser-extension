@@ -1,1 +1,1 @@
-# Kiwi-extension-UI
+# Kiwi-chrome-extension
