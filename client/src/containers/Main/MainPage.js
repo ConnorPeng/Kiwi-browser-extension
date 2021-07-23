@@ -6,6 +6,9 @@ import ItemBox from "../../components/ItemBox/ItemBox";
 import SortButton from "../../components/SortButton/SortButton";
 import "./MainPage.css";
 
+const axios = require('axios');
+const test_url = "https://www.saksfifthavenue.com/product/common-projects-lug-sole-leather-combat-boots-0400011209061.html?dwvar_0400011209061_color=BLACK";
+
 const fakeData = [
   {
     website: "Farfetch",
@@ -81,6 +84,22 @@ export default class MainPage extends Component {
       targetSize: -1,
       sortKey: "Default",
     };
+
+    
+    axios.get('http://localhost:5000', {
+      params: {
+        product_url: "https://www.ysl.com/en-us/sneakers/court-classic-sl-10-sneakers-in-perforated-leather-and-suede-6032231JZ301000.html"
+      },
+      headers: {"Access-Control-Allow-Origin": "*"},
+    })
+    .then(function (response) {
+      console.log(response);
+    })
+    .catch(function (error) {
+      // handle error
+      console.log(error);
+    })
+ 
   }
 
   populateItems() {
