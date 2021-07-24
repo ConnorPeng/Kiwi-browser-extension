@@ -1,15 +1,17 @@
-import React, { Component, PropTypes } from "react";
-import AccountCircleIcon from "@material-ui/icons/AccountCircle";
-import Header from "../../components/Header/Header";
-import Selector from "../../components/Selector/Selector";
-import "./SelectionPage.css";
+/** @format */
+
+import React, { Component, PropTypes } from 'react';
+import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+import Header from '../../components/Header/Header';
+import Selector from '../../components/Selector/Selector';
+import './SelectionPage.css';
 
 const fakeData = [
-  "Farfetch",
-  "SSense",
-  "END.",
-  "Saks Fifth Avenue",
-  "Neiman Marcus",
+  'Farfetch',
+  'SSENSE',
+  'END.',
+  'Saks Fifth Avenue',
+  'Neiman Marcus',
 ];
 
 export default class SelectionPage extends Component {
@@ -28,7 +30,7 @@ export default class SelectionPage extends Component {
           brand={fakeData[i]}
           handler={(v, o) => this.updateList(v, o)}
           idNum={i}
-          className="selection-item"
+          className='selection-item'
         />
       );
       if (i < fakeData.length - 1) {
@@ -53,22 +55,21 @@ export default class SelectionPage extends Component {
 
   render() {
     return (
-      <div className="selection-page-body-leo">
-        <div className="selection-header-part">
+      <div className='selection-page-body-leo'>
+        <div className='selection-header-part'>
           <Header />
-          <AccountCircleIcon className="selection-page-account" />
+          <AccountCircleIcon className='selection-page-account' />
         </div>
-        <h6 className="selection-instruction">Select your favorite stores</h6>
+        <h6 className='selection-instruction'>Select your favorite stores</h6>
         <hr />
-        <div className="selection-selector-list">{this.populateStore()}</div>
-        <div className="selection-footer">
+        <div className='selection-selector-list'>{this.populateStore()}</div>
+        <div className='selection-footer'>
           <hr />
           <button
-            className="selection-finish-button"
+            className='selection-finish-button'
             onClick={() => {
               this.handleFinish();
-            }}
-          >
+            }}>
             Finish
           </button>
         </div>
