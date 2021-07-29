@@ -7,6 +7,7 @@ import Footer from '../../components/Footer/Footer';
 import ItemBox from '../../components/ItemBox/ItemBox';
 import SortButton from '../../components/SortButton/SortButton';
 import './MainPage.css';
+import { linkSync } from 'fs';
 
 const axios = require('axios');
 
@@ -17,11 +18,12 @@ var website = [];
 var product_name = [];
 var price = [];
 var image = [];
+var link = [];
 var onwebsite = new Boolean(false);
 var fakeData = [];
 if (document.URL.indexOf('ysl') != -1) {
   axios
-    .get('http://localhost:5000', {
+    .get('https://kiwi-backend-d6vyq.ondigitalocean.app/', {
       params: {
         product_url: document.URL,
       },
@@ -34,33 +36,31 @@ if (document.URL.indexOf('ysl') != -1) {
         website.push(JSON.stringify(response['data'][i]['website']));
         product_name.push(JSON.stringify(response['data'][i]['product_name']));
         price.push(JSON.stringify(response['data'][i]['price']));
-        //image.push(JSON.stringify(response['data'][i]['image_stream']));
+        var img = JSON.stringify(response['data'][i]['image_stream']);
+        image.push(img.substring(1, img.length - 1));
+        link.push(JSON.stringify(response['data'][i]['url']));
       }
-      console.log('pjh');
-      console.log(website[0] + ' ' + price[0] + ' ' + product_name[0]);
+
       fakeData = [
         {
           website: website[0],
-          imgSrc: image[0],
+          imgSrc: 'data:image/jpeg;base64,' + image[0],
           price: price[0],
           freeShip: 1,
           shipCost: 0,
           size: [39, 40, 41, 42, 43, 44, 45, 46, 47],
           popularity: 10,
-          url:
-            'https://www.farfetch.com/shopping/men/common-projects-achilles-lace-up-sneakers-item-13838256.aspx?storeid=10853',
+          url: link[0],
         },
         {
           website: website[1],
-          imgSrc:
-            'https://media.endclothing.com/media/f_auto,q_auto:eco/prodmedia/media/catalog/product/2/1/21-08-2019_commonprojects_originalachilleslow_white_1528-0506_jm_1x.jpg',
+          imgSrc: 'data:image/jpeg;base64,' + image[1],
           price: price[1],
           freeShip: 1,
           shipCost: 0,
           size: [40, 41, 42, 43],
           popularity: 7,
-          url:
-            'https://www.ssense.com/en-us/men/product/common-projects/white-achilles-laceless-sneakers/5702571',
+          url: link[1],
         },
         {
           website: website[2],
