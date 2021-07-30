@@ -64,39 +64,33 @@ if (document.URL.indexOf('ysl') != -1) {
         },
         {
           website: website[2],
-          imgSrc:
-            'https://media.endclothing.com/media/f_auto,q_auto:eco/prodmedia/media/catalog/product/2/1/21-08-2019_commonprojects_originalachilleslow_white_1528-0506_jm_1x.jpg',
+          imgSrc: 'data:image/jpeg;base64,' + image[2],
           price: price[2],
           freeShip: 1,
           shipCost: 0,
           size: [38, 39, 40, 41, 42, 43, 44, 45],
           popularity: 6,
-          url:
-            'https://www.endclothing.com/us/common-projects-original-achilles-low-1528-0506.html',
+          url: link[2],
         },
         {
           website: website[3],
-          imgSrc:
-            'https://media.endclothing.com/media/f_auto,q_auto:eco/prodmedia/media/catalog/product/2/1/21-08-2019_commonprojects_originalachilleslow_white_1528-0506_jm_1x.jpg',
+          imgSrc: 'data:image/jpeg;base64,' + image[3],
           price: price[3],
           freeShip: 1,
           shipCost: 0,
           size: [39, 40, 41, 42, 43, 44, 45, 46, 47],
           popularity: 4,
-          url:
-            'https://www.saksfifthavenue.com/product/common-projects-original-achilles-leather-low-top-sneakers-0400099153185.html?dwvar_0400099153185_color=WHITE',
+          url: link[3],
         },
         {
           website: website[4],
-          imgSrc:
-            'https://media.endclothing.com/media/f_auto,q_auto:eco/prodmedia/media/catalog/product/2/1/21-08-2019_commonprojects_originalachilleslow_white_1528-0506_jm_1x.jpg',
+          imgSrc: 'data:image/jpeg;base64,' + image[4],
           price: price[4],
           freeShip: 0,
           shipCost: 23,
           size: [39, 40, 41, 42, 43, 44, 45, 46],
           popularity: 10,
-          url:
-            'https://www.neimanmarcus.com/p/common-projects-mens-achilles-leather-low-top-sneakers-white-prod198371542?childItemId=NMN4HT0_',
+          url: link[4],
         },
       ];
     })
